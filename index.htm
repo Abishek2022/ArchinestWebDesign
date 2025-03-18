@@ -2,9 +2,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tailwind.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class=" m">
+    <div class=" w-9/10 mx-auto h-fit     ">
+        <div class="inset-0 fixed z-50 bg-white flex w-9/10 mx-auto h-[80px] justify-between items-center p-4    ">
+            <div class="text-[35px] font-semibold">Archinest</div>
+        <div class="flex gap-14  ">
+            <div class="flex gap-10 text-[19px] items-center text-gray-700">  
+                <div>Home</div>
+                <div>work</div>
+                <div>service</div>
+                <div>About</div>
+            </div>
+            <div class=" flex text-[20px] bg-black text-white px-7 py-2 gap-2 items-center">
+                <div>Get in touch</div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg></div>
+            </div>
+        </div>
+
+        </div>
+        
+    </div>
+    <div class="grid   mt-30 h-fit">
+        <div class="flex items-center justify-center p-4">
+            <div class="relative  overflow-hidden shadow-lg w-9/10  items-center   ">
+                <div id="slider" class="flex transition-transform duration-700 ease-in-out w-full mx-auto h-[600px] object-cover">
+                    <img src="h01.jpg" class="w-full flex-shrink-0 object-cover">
+                    <img src="h02.jpg" class="w-full flex-shrink-0 object-cover">
+                    <img src="h03.jpg" class="w-full flex-shrink-0 object-cover">
+                    <img src="h04.jpg" class="w-full flex-shrink-0 object-cover">
+                    <img src="h05.jpg" class="w-full flex-shrink-0 object-cover">
+                </div>
+            </div>
+        </div>
+        <div class="grid gap-2 w-9/10 mx-auto p-2 ">
+            <div class="text-[58px] font-medium">Designing the Future, One Iconic Structure at a Time</div>
+            <div class="text-[25px] w-6/12 font-light text-gray-500 ">We are collective of Architects, Designers, Engineers and Planners working together to build better future</div>
+        </div>
+
+    </div>
+    <div class="h-screen"></div>
+
+   
     
+  <script>
+        const slider = document.getElementById('slider');
+        let index = 0;
+        
+        function nextSlide() {
+            index = (index + 1) % slider.children.length;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+        
+        setInterval(nextSlide, 3000);
+    </script>
+  
 </body>
 </html>
