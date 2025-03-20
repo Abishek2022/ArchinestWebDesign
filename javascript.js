@@ -164,7 +164,7 @@ const newService=[
    
 ];
 newService.map((val,index)=>{
-  service.innerHTML +=`   <div class="flex gap-3 border-b  cursor-pointer  h-[210px]">
+  service.innerHTML +=`   <div class="flex gap-3 border-b  cursor-pointer hover:bg-red-100 transition-all ease-in-out duration-500 hover:border-red-100 h-[210px]">
          <div class="text-[25px] text-gray-500">${val.number}</div>
          <div class="grid h-fit gap-3">
            <div class="text-[25px] font-semibold">${val.title}</div>
@@ -184,6 +184,49 @@ newService.map((val,index)=>{
    
 
 });
+
+
+const meet= document.getElementById("meet");
+const meetService=[
+   {
+       number:`h02.jpg`,
+       title: `Architecture`,
+       sub: `Manager`
+       
+   },
+   {
+       number:`h01.jpg`,
+       title: `Abishek Thapa`,
+       sub: `Manager`
+       
+   },
+   {
+    number:`h02.jpg`,
+    title: `Abishek Thapa`,
+    sub: `Manager`
+    
+},
+{
+    number:`h01.jpg`,
+    title: `Abishek Thapa`,
+    sub: `Manager`
+    
+}, 
+   
+];
+meetService.map((val,index)=>{
+  meet.innerHTML +=`  
+   <div class="grid h-[350px] w-[400px] border p-3 border-gray-300">
+        <div><img src="${val.number}" /></div>
+        <div>
+            <div class="text-[22px]">${val.title}</div>
+            <div class="text-gray-500">${val.sub}</div>
+        </div>
+  </div>`
+   
+
+});
+
 
    const slider = document.getElementById('slider');
    let index = 0;
