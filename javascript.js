@@ -194,21 +194,33 @@ newService.map((val,index)=>{
    }
    
    setInterval(nextSlide, 3000);
-   $('.owl-carousel').owlCarousel({
-    rtl:true,
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
 
+
+
+   const neSlider = document.getElementById('testi');
+   const indicators = document.querySelectorAll('.indicator');
+   const prevBtn = document.getElementById('prev');
+   const nextBtn = document.getElementById('next');
+   let ind = 0;
+   
+   function updateSlider() {
+       neSlider.style.transform = `translateX(-${ind * 100}%)`;
+       indicators.forEach((dot, i) => {
+           dot.style.opacity = i === ind ? '1' : '0.5';
+       });
+   }
+   
+   function nextSlider() {
+       ind = (ind + 1) % neSlider.children.length;
+       updateSlider();
+   }
+   
+   function prevSlide() {
+       ind = (ind - 1 + neSlider.children.length) % neSlider.children.length;
+       updateSlider();
+   }
+   
+   nextBtn.addEventListener('click', nextSlider);
+   prevBtn.addEventListener('click', prevSlide);
+   
+   updateSlider();
