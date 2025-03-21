@@ -3,5 +3,28 @@
     @apply bg-red-700 border-2;
 }
 .main-font{
-    @apply text-[58px];
+    @apply 2xl:text-[58px];
 }
+ .size{
+    @apply h-[900px];
+ }
+ @keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    } to{
+        opacity: 1;
+        scale: 1;
+    }
+ }
+ .award{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+ }
+ .md-text{
+    @apply md:text-[50px]
+ }
+ .md-sub-text{
+    @apply md:text-[23px]
+ }

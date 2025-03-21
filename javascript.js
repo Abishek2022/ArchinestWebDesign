@@ -27,8 +27,8 @@ const newInsta=[
   
 ];
 newInsta.map((val,index)=>{
-   insta.innerHTML +=`      <div class=" flex  w-[500px] h-[415px] object-cover  ">
-               <img class="w-[415px] h-[550px]" src="${val.number}"/>
+   insta.innerHTML +=`      <div class=" flex  2xl:w-[500px] md:w-[310px] 2xl:h-[570px] object-cover  ">
+               <img class="w-[415px] h-[550px] object-cover" src="${val.number}"/>
 
            </div>`
    
@@ -78,7 +78,7 @@ const newAward=[
   
 ];
 newAward.map((val,index)=>{
-   award.innerHTML +=`    <div class="grid grid-cols-3 font-light justify-between text-[23px] text-gray-500 items-start mb-4 ">
+   award.innerHTML +=`    <div class="grid grid-cols-3 font-light justify-between text-[23px] text-gray-500 items-start mb-4 award ">
                <div >${val.number}</div>
                <div>${val.title}</div>
                <div>${val.sub}</div>
@@ -109,7 +109,7 @@ const newCount=[
 ];
 newCount.map((val,index)=>{
    count.innerHTML +=`    <div class="grid h-fit ">
-           <div class="text-[55px] font-medium">${val.number}+</div>
+           <div class="2xl:text-[55px] md:text-[45px] font-medium">${val.number}+</div>
            <div class="text-[25px] font-light text-gray-500 ">${val.title}</div>
        </div>`
    
@@ -164,15 +164,15 @@ const newService=[
    
 ];
 newService.map((val,index)=>{
-  service.innerHTML +=`   <div class="flex gap-3 border-b  cursor-pointer hover:bg-red-100 transition-all ease-in-out duration-500 hover:border-red-100 h-[210px]">
+  service.innerHTML +=`   <div class="flex gap-3 border-b  p-3 cursor-pointer hover:bg-red-100  hover:shadow-4xl hover:border-red-100 2xl:h-[220px] md:h-[210px] hover:border-b-gray-200">
          <div class="text-[25px] text-gray-500">${val.number}</div>
          <div class="grid h-fit gap-3">
            <div class="text-[25px] font-semibold">${val.title}</div>
-           <div class="text-[18px] text-gray-500 leading-9">
+           <div class="2xl:text-[18px] text-gray-500 md:text-[15px] 2xl:leading-9">
              ${val.sub}
            </div>
            <div class="flex gap-3 items-center">
-             <div>Learn more</div>
+             <div class="2xl:text-[18px]  md:text-[15px]">Learn more</div>
              <div>
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024">
                  <path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/>
