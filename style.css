@@ -2,11 +2,32 @@
 .test{
     @apply bg-red-700 border-2;
 }
+.container-size{
+   @apply w-9/10 mx-auto p-4;
+}
 .main-font{
     @apply 2xl:text-[58px];
 }
+.sub-font{
+   @apply 2xl:text-[52px] font-medium;
+}
+.p-font{
+   @apply 2xl:text-[22px] text-gray-500;
+}
  .size{
     @apply h-[900px];
+ }
+ .button{
+   @apply flex gap-2 border w-fit px-5 py-2 2xl:text-[20px] items-center bg-black font-light text-white; 
+ }
+ .text-field{
+   @apply h-fit text-[17px]  p-3 rounded-md  bg-[#f7f2f0] focus:border-gray-500 focus:outline focus:outline-gray-300;
+ }
+ .text-area{
+   @apply h-[250px] text-[17px]  p-3 rounded-md  bg-[#f7f2f0] focus:border-gray-500 focus:outline focus:outline-gray-300;
+ }
+ .nev-items{
+   @apply hover:text-black cursor-pointer;
  }
  @keyframes appear {
     from{
