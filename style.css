@@ -29,6 +29,9 @@
  .nev-items{
    @apply hover:text-black cursor-pointer;
  }
+ .info-cont{
+   @apply flex items-center gap-2;
+ }
  @keyframes appear {
     from{
         opacity: 0;
