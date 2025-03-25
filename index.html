@@ -14,7 +14,7 @@
 <body class=" m">
     <div class=" w-full mx-auto inset-0 fixed z-50  bg-white  h-[80px] p-4     ">
         <div class=" bg-white flex w-9/10 mx-auto justify-between items-center    ">
-            <div class="text-[35px] font-semibold">Archinest</div>
+            <div class="text-[35px] font-semibold cursor-pointer">Archinest</div>
         <div class="flex gap-14  ">
             <div class="flex gap-10 text-[18px] items-center text-gray-500">  
                 <div class="nev-items">Home</div>
@@ -23,7 +23,7 @@
                 <div class="nev-items">About</div>
             </div>
             <div class=" flex text-[20px] bg-black text-white px-7 py-2 gap-2 items-center transition duration-300 ease-in-out cursor-pointer">
-                <div>Get in touch</div>
+                <div><a href="contact.html">Get in touch</a></div>
                 <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg></div>
             </div>
         </div>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="grid gap-2 w-9/10 mx-auto p-2  ">
-            <div class="2xl:text-[56px] md:text-[50px]  font-medium">Designing the Future, One Iconic Structure at a Time</div>
+            <div class="2xl:text-[56px] md:text-[50px]    font-medium">Designing the Future, One Iconic Structure at a Time</div>
             <div class="2xl:text-[25px] md:text-[23px] w-6/12 font-light text-gray-500 ">We are collective of Architects, Designers, Engineers and Planners working together to build better future</div>
         </div>
 
@@ -59,7 +59,7 @@
         <div class=" w-9/10 mx-auto grid grid-cols-2 gap-14 p-3    ">
             <div class=" grid gap- mt-18  ">
                 <div class="grid gap-10 h-fit">
-                    <div class="main-font md-text 2xl:w-9/12 leading-15  ">We ensure the true Art of building</div>
+                    <div id="numbers" class="main-font md-text 2xl:w-9/12 leading-15  ">We ensure the true Art of building</div>
                     <div class="grid gap-5 2xl:text-[23px] font-thin md-sub-text">
                         <div>We are collective of Architects, Designers, Engineers and Planners working together to build better future.
                         </div>
@@ -106,35 +106,65 @@
           </div>
         </div>
       </div>
-      <!--
-      <div class="-scroll-mt-24">
-        <div>Some of our Projects</div>
-        <div class="relative h-[600vh]"> 
+  
+      <div class=" container-size md:text-[55px]  mt-24">
+        <div class="main-font  ">Some of our Projects</div>
+        <div class="relative 2xl:h-[440vh] bg-black text-white mt-10 "> 
            
-            <div class="sticky top-0 h-[100px]  bg-purple-500 z-10">
-                Section 1
+            <div class="sticky top-16 h-fit z-10 p-6">
+               <div class="flex justify-between items-center ">
+                <h1 class="project-heading">Harpa Concert Hall</h1>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="55" height="45" viewBox="0 0 1024 1024"><path fill="currentColor" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/><path fill="currentColor" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/></svg></div>
+               </div>
+               <div class="border mt-4"></div>
+               <div class="flex  justify-between text-[20px] mt-5">
+                <h1>March 2023</h1>
+                <h1>Public Hall</h1>
+               </div>
+               <div class=" h-[730px] mt-5"><img class="h-[730px] w-full object-cover"  src="lo01.jpg"/></div>
             </div>
     
          
-            <div class="sticky top-0 h-screen flex  z-20">
-                Section 2
+            <div class="sticky top-44 h-fit  bg-black text-white p-6 mt-84  z-20 border-t-2">
+                <div class="flex justify-between items-center ">
+                    <h1 class="project-heading">Guggenheim Museum bilbao</h1>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="55" height="45" viewBox="0 0 1024 1024"><path fill="currentColor" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/><path fill="currentColor" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/></svg></div>
+                   </div>
+                   <div class="border mt-4"></div>
+                   <div class="flex  justify-between text-[20px] mt-5">
+                    <h1>June 1997</h1>
+                    <h1>Museum</h1>
+                   </div>
+                   <div class=" h-[610px] mt-5"><img class="h-[610px] w-full object-cover"  src="h03.jpg"/></div>
             </div>
-            <div class="sticky top-0 h-screen flex items-center justify-center bg-purple-500 text-white text-4xl font-bold z-30">
-                Section 1
+            <div class="sticky top-73 h-fit  bg-black mt-84 text-white p-6  z-30 border-t-2">
+                <div class="flex justify-between items-center ">
+                    <h1 class="project-heading">Parkside Pavilion</h1>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="55" height="45" viewBox="0 0 1024 1024"><path fill="currentColor" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/><path fill="currentColor" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/></svg></div>
+                   </div>
+                   <div class="border mt-4"></div>
+                   <div class="flex  justify-between text-[20px] mt-5">
+                    <h1>September 2021</h1>
+                    <h1>public Space</h1>
+                   </div>
+                   <div class=" h-[495px] mt-5"><img class="h-[495px] w-full object-cover" src="h04.jpg"/></div>
             </div>
-    
-         
-            <div class="sticky top-0 h-screen flex  z-40">
-                Section 2
+            <div class="sticky top-0  h-fit  bg-black text-white p-6 z-30  border-t-2">
+                <div class="flex justify-between items-center ">
+                    <h1 class="project-heading">Basco Verticale</h1>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="55" height="45" viewBox="0 0 1024 1024"><path fill="currentColor" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/><path fill="currentColor" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/></svg></div>
+                   </div>
+                   <div class="border mt-4"></div>
+                   <div class="flex  justify-between text-[20px] mt-5">
+                    <h1>December 2022</h1>
+                    <h1>Suitable Residential</h1>
+                   </div>
+                   <div class=" h-[750px] mt-5 object-cover"><img class="h-[750px] w-full object-cover"  src="n01.jpg"/></div>
             </div>
-    
-    
-           
         </div>
     
     </div>
-        -->
-      
+        
     
     <div class="flex bg-black w-full text-white h-[450px] mt-24 items-center justify-center ">
         <div class="text-[56px] p-4 w-9/10 mx-auto award   ">

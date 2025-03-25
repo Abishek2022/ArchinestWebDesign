@@ -32,6 +32,10 @@
  .info-cont{
    @apply flex items-center gap-2;
  }
+ .project-heading{
+   @apply text-[50px];
+ }
+
  @keyframes appear {
     from{
         opacity: 0;

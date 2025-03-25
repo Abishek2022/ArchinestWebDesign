@@ -1,6 +1,15 @@
 
 
-      
+window.addEventListener('scroll', function() {
+    const fadeDiv = document.getElementById('numbers');
+    const windowHeight = window.innerHeight;
+    const divPosition = fadeDiv.getBoundingClientRect().top;
+
+    
+    if (divPosition < windowHeight) {
+    fadeDiv.classList.add('opacity-100', 'translate-y-0');
+    }
+});
 const insta= document.getElementById("insta");
 const newInsta=[
    {
