@@ -35,6 +35,9 @@
  .project-heading{
    @apply text-[50px];
  }
+ .btn-hover{
+   @apply transition-transform hover:scale-105 duration-500 ease-in-out;
+ }
 
  @keyframes appear {
     from{

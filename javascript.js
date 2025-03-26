@@ -36,7 +36,7 @@ const newInsta=[
   
 ];
 newInsta.map((val,index)=>{
-   insta.innerHTML +=`      <div class=" flex  2xl:w-[500px] md:w-[310px] 2xl:h-[570px] object-cover  ">
+   insta.innerHTML +=`      <div  class=" flex  2xl:w-[500px] md:w-[310px] 2xl:h-[570px] object-cover transition-transform hover:scale-110 duration-500 ease-in-out  ">
                <img class="w-[415px] h-[550px] object-cover" src="${val.number}"/>
 
            </div>`
