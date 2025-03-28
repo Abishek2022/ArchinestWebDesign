@@ -11,7 +11,22 @@
      <!-- jQuery (Required) -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+<style>
+    .collapsible-content {
+ 
+  
+  transition: max-height 0.5s ease-out; /* Adjust timing as needed */
+  display: flex;
+  
+}
+
+
+
+
+
+</style>
 <body class=" m">
+    <!--nav-bar-->
     <div class=" w-full mx-auto inset-0 fixed z-50  bg-white  h-[80px] p-4     ">
         <div class=" bg-white flex w-9/10 mx-auto justify-between items-center    ">
             <div class="text-[35px] font-semibold cursor-pointer">Archinest</div>
@@ -31,6 +46,7 @@
         </div>
         
     </div>
+        <!--banner-section-->
     <div id="home" class="grid md:mt-20   2xl:mt-30 h-fit">
         <div class="flex items-center justify-center p-4">
             <div class="relative  overflow-hidden shadow-lg w-9/10  items-center   ">
@@ -49,12 +65,14 @@
         </div>
 
     </div>
+        <!--years-count-->
     <div class=" w-full ">
         <div id="numbers" class="flex w-9/10 mx-auto p-10 mt-24 justify-between border-t  border-b ">
         
         </div>
 
     </div>
+        <!--about-us-->
     <div class="bg-black text-white mt-24 2xl:h-[1610px] md:h-[1450px]">
         <div class=" w-9/10 mx-auto grid grid-cols-2 gap-14 p-3    ">
             <div class=" grid gap- mt-18  ">
@@ -81,9 +99,8 @@
         </div>
     </div>
 
-
+    <!--service-section-->
     <div class="flex w-9/10 mx-auto p-4  mt-24">
-        <!-- Left Section (Sticky) -->
       <div>
             <div class=" grid gap-5 sticky top-24">
                 <div class="text-[55px] ">Our Services</div>
@@ -96,17 +113,13 @@
                 </div>
              </div>
             </div>
-             
-       
-      
-        <!-- Right Section (Scrollable) -->
         <div class="w-full h-screen overflow-y-auto ">
           <div id="service" class="space-y-8">
 
           </div>
         </div>
       </div>
-  
+      <!--project-section-->
       <div class=" container-size md:text-[55px]  mt-24">
         <div class="main-font  ">Some of our Projects</div>
         <div class="relative 2xl:h-[440vh] bg-black text-white mt-10 "> 
@@ -165,7 +178,7 @@
     
     </div>
         
-    
+        <!--text-section-->
     <div class="flex bg-black w-full text-white h-[450px] mt-24 items-center justify-center ">
         <div class="text-[56px] p-4 w-9/10 mx-auto award   ">
             At Archinest, we don’t just design buildings; we create environments that inspire creativity, foster connections, andtransform the way people live, work, and experience theworld around them.
@@ -173,9 +186,9 @@
 
     </div>
 
-   <!--  <div class="h-screen">
+    <div class="h-screen">
      
-    
+        <!--
    <div class=" mt-24 w-9/10 p-4 h-fit mx-auto">
         <div class="main-font">Our Clients Testimonials</div>
         <div class=" flex  gap-10 items-center">
@@ -215,7 +228,7 @@
 
 </div>-->
 
-
+    <!--award-section-->
     <div class="">
         <div class="grid w-9/10 mx-auto p-4 mt-34 gap-16">
             <div class="main-font">Awards</div>
@@ -224,11 +237,10 @@
             </div>
         </div>
     </div>
-
+    <!--team-section-->
     <div>
         <div class="grid grid-cols-2 w-9/10 mx-auto  mt-24">
-            <!-- Left Section (Sticky) -->
-            
+            <!-- (Sticky) -->
                 <div>
                 <div class=" grid gap-3 sticky top-24">
                     <div class="text-[55px] w-fit">Meet Our Team</div>
@@ -241,19 +253,15 @@
                     </div>
                  </div>
                 </div>
-            
-          
-            <!-- Right Section (Scrollable) -->
+            <!-- (Scrollable) -->
             <div class="w-full  overflow-y-auto  ">
               <div id="meet" class=" grid space-y-3 grid-cols-2 gap-2">
-    
               </div>
             </div>
           </div>
-          
-        </div>
+    </div>
   
-
+    <!--service-section-->
     <div class=" h-screen bg-black text-white mt-24">
         <div class="grid grid-cols-2 w-9/10 mx-auto p-4 border border-black mt-24  justify-center gap-2">
             <div>
@@ -275,29 +283,40 @@
                                 <div class="flex gap-2">
                                     <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/></path></svg></div>
                                     <div>+01 2 928-76453
-
                                     </div>
                                 </div>
                                 <div class="flex gap-2">
                                     <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 7H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m-9.684 7.316l1.602 1.4c.305.266.691.398 1.082.398s.777-.133 1.082-.398l1.602-1.4l-.037.037l3.646 3.646H5.707l3.646-3.646zM5 17.293V10.54l3.602 3.151zm10.398-3.602L19 10.54v6.75zM19 9v.21l-6.576 5.754a.68.68 0 0 1-.848 0L5 9.21V9z"/></svg></div>
                                     <div>hello@archinest.com</div>
                                 </div>
-
                             </div>
-
                         </div>
-                     
                     </div>
-               
                 <div class="  grid w-14 border  h-fit px-4 py-4 items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg></div>
             </div>
             </div>
             <div class=" gitd items-center h-[587px] mt-24 object-cover"><img class="h-[587px]" src="lo01.jpg"/></div>
-            
         </div>
-    
+    </div>
+    <!---question-section-->
+    <div class="mt-28">
+        <div class="container-size grid grid-cols-2">
+            <div class="">
+            <div class="grid gap-5">
+                <div class="main-font w-9/12 leading-18 ">Frequently Asked Questions</div>
+                <div class="p-font w-8/12 ">Have questions about Archinest? We've got you covered! Explore our FAQs to learn more about our services, process, and what sets us apart.</div>
+
+            </div>
+               
+            </div>
+            <div id="question" class="grid h-fit gap-10 mt-9">
+
+            </div>
+        </div>
 
     </div>
+
+    <!--social-media-section-->
     <div class="mt-24 h-fit ">
         <div class="grid gap-10 w-9/10 mx-auto   p-4">
             <div class="flex justify-between items-center">
@@ -314,6 +333,7 @@
         
 
     </div>
+        <!--footer-section-->
     <div class=" 2xl:h-[900px] md:h-[800px]  mt-20 bg-black text-white">
         <div class="w-9/10 mx-auto  ">
             <div class="grid  ">
@@ -348,6 +368,7 @@
         </div>
 
     </div>
+
 
    
     

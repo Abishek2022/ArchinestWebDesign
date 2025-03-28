@@ -1,5 +1,5 @@
 
-
+//social media
 window.addEventListener('scroll', function() {
     const fadeDiv = document.getElementById('numbers');
     const windowHeight = window.innerHeight;
@@ -46,7 +46,7 @@ newInsta.map((val,index)=>{
 
 
 
- 
+ //awards
  const award= document.getElementById("award");
 const newAward=[
    {
@@ -97,6 +97,7 @@ newAward.map((val,index)=>{
 
 });
 
+//numbering yers data
 const count= document.getElementById("numbers");
 const newCount=[
    {
@@ -125,6 +126,7 @@ newCount.map((val,index)=>{
 
 });
 
+//service
 const service= document.getElementById("service");
 const newService=[
    {
@@ -173,7 +175,7 @@ const newService=[
    
 ];
 newService.map((val,index)=>{
-  service.innerHTML +=`   <div class="flex gap-3 border-b  p-3 cursor-pointer hover:bg-red-100  hover:shadow-4xl hover:border-red-100 2xl:h-[220px] md:h-[210px] hover:border-b-gray-200">
+  service.innerHTML +=`   <div class="flex gap-3 border-b  p-3 cursor-pointer hover:bg-red-100   hover:shadow-4xl hover:border-red-100 2xl:h-[220px] md:h-[210px] hover:border-b-gray-200">
          <div class="text-[25px] text-gray-500">${val.number}</div>
          <div class="grid h-fit gap-3">
            <div class="text-[25px] font-semibold">${val.title}</div>
@@ -194,7 +196,7 @@ newService.map((val,index)=>{
 
 });
 
-
+//board member
 const meet= document.getElementById("meet");
 const meetService=[
    {
@@ -235,8 +237,63 @@ meetService.map((val,index)=>{
    
 
 });
+//board member
+const question= document.getElementById("question");
+const arrQuestion=[
+   {
+     
+       title: `What services does Archinest provide?`,
+       sub: `Have questions about Archinest? We've got you covered! Explore our FAQs to learn more about our services, process, and what sets us apart.`
+       
+   },
+   {
+       
+       title: `How can I get started with a project at Archinest?`,
+       sub: `Have questions about Archinest? We've got you covered! Explore our FAQs to learn more about our services, process, and what sets us apart.`
+       
+   },
+   {
+       
+    title: `How long does it take to complete a project?`,
+    sub: `Have questions about Archinest? We've got you covered! Explore our FAQs to learn more about our services, process, and what sets us apart.`
+    
+},
+{
+       
+    title: `Does Archinest work with eco-friendly and sustainable materials?`,
+    sub: `Have questions about Archinest? We've got you covered! Explore our FAQs to learn more about our services, process, and what sets us apart.`
+    
+},
+{
+       
+    title: `Can Archinest handle both residential and commercial projects?`,
+    sub: `Have questions about Archinest? We've got you covered! Explore our FAQs to learn more about our services, process, and what sets us apart.`
+    
+},
 
+   
+   
+];
+arrQuestion.map((val,index)=>{
+    question.innerHTML +=`  
+       <div class="grid gap-6">
+                    <div class="flex justify-between items-center collapsible ">
+                        <button type="button" class="text-[22px]   cursor-pointer   text-left">${val.title}</button>
+                        <div class="text-bold"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5.5a.5.5 0 0 1 .5.5v5.5H18a.5.5 0 0 1 0 1h-5.5V18a.5.5 0 0 1-1 0v-5.5H6a.5.5 0 0 1 0-1h5.5V6a.5.5 0 0 1 .5-.5"/></svg></div>
 
+                    </div>
+                 
+                    
+                    <div class="content hidden">
+                      <p class="text-[20px] text-gray-600 collapsible-content">${val.sub}</p>
+                    </div>
+                    <div class="border-b"></div>
+                </div>`
+   
+
+});
+
+// slider
    const slider = document.getElementById('slider');
    let index = 0;
    
@@ -249,30 +306,21 @@ meetService.map((val,index)=>{
 
 
 
-   const neSlider = document.getElementById('testi');
-   const indicators = document.querySelectorAll('.indicator');
-   const prevBtn = document.getElementById('prev');
-   const nextBtn = document.getElementById('next');
-   let ind = 0;
+
+
+//ask question collaps
+  var coll = document.getElementsByClassName("collapsible");
+   var i;
    
-   function updateSlider() {
-       neSlider.style.transform = `translateX(-${ind * 100}%)`;
-       indicators.forEach((dot, i) => {
-           dot.style.opacity = i === ind ? '1' : '0.5';
-       });
-   }
-   
-   function nextSlider() {
-       ind = (ind + 1) % neSlider.children.length;
-       updateSlider();
-   }
-   
-   function prevSlide() {
-       ind = (ind - 1 + neSlider.children.length) % neSlider.children.length;
-       updateSlider();
-   }
-   
-   nextBtn.addEventListener('click', nextSlider);
-   prevBtn.addEventListener('click', prevSlide);
-   
-   updateSlider();
+   for (i = 0; i < coll.length; i++) {
+     coll[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var content = this.nextElementSibling;
+       if (content.style.display === "flex") {
+         content.style.display = "none";
+       } else {
+         content.style.display = "flex";
+         
+       }
+     });
+   } 
